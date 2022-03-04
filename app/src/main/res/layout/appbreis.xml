@@ -41,7 +41,7 @@
         style="@style/EditText"
         android:inputType="textEmailAddress"
         android:drawableRight="@drawable/ic_email"
-        android:hint="Email"
+        android:hint="Email.."
         app:layout_constraintEnd_toEndOf="@+id/containerComponents"
         app:layout_constraintStart_toStartOf="@+id/containerComponents"
         app:layout_constraintTop_toTopOf="@+id/containerComponents"/>

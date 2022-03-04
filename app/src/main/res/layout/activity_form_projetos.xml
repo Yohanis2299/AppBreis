@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+
+    android:textAlignment="center">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:background="#FB8C00"
+        tools:context=".FormProjetos">
+
+
+        <View
+            android:id="@+id/view"
+            style="@style/background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <ImageButton
+            android:id="@+id/bt_note"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/data"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.0"
+            tools:src="@drawable/data" />
+
+        <ImageButton
+            android:id="@+id/bt_Profile"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:backgroundTint="#00472020"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="1.0"
+            tools:srcCompat="@drawable/profile" />
+
+        <ImageButton
+            android:id="@+id/bt_config"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.88"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/config"
+            tools:srcCompat="@drawable/config" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="393dp"
+            android:layout_height="63dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Projetos"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="48sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Projetos" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="62dp"
+            android:layout_height="63dp"
+            android:backgroundTint="#00FFFFFF"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.026"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/back"
+            tools:srcCompat="@drawable/back" />
+
+        <View
+            android:id="@+id/view2"
+            style="@style/searchview"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintEnd_toEndOf="@+id/view"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="@+id/view"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <SearchView
+            android:id="@+id/search"
+            style="@style/Search"
+            android:layout_width="251dp"
+            android:layout_height="29dp"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/view2"
+            app:layout_constraintTop_toTopOf="@+id/view"
+            app:layout_constraintVertical_bias="1.0" />//
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

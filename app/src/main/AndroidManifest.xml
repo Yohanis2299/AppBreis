@@ -10,7 +10,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
-            android:name=".FormProjetos"
+            android:name=".FormApontAdm"
+            android:exported="false" />
+        <activity
+            android:name=".FormGerenciarUser"
+            android:exported="false" />
+        <activity
+            android:name=".FormGerenciarClient"
+            android:exported="false" />
+        <activity
+            android:name=".FormGerenciarProj"
+            android:exported="false" />
+        <activity
+            android:name=".FormBemVindoAdm"
+            android:exported="false" />
+        <activity
+            android:name=".FormProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ListaApontamento"
+            android:exported="false" />
+        <activity
+            android:name=".FormApontamento"
+            android:exported="false" />
+        <activity
+            android:name=".FormBemVindo"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
@@ -18,7 +42,6 @@
         <activity
             android:name=".AppBreis"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

@@ -14,10 +14,22 @@
         <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/searchview.xml" value="0.124" />
         <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/white_back.xml" value="0.1125" />
         <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/drawable/white_background.xml" value="0.1125" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_apont_adm.xml" value="0.264" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_apontamento.xml" value="0.2" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_apontamento2.xml" value="0.176" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_bemvindo_adm.xml" value="0.2" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_bemvindoxml.xml" value="0.264" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_gerenciar_client.xml" value="0.1102077687443541" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_gerenciar_proj.xml" value="0.2" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_gerenciar_user.xml" value="0.1102077687443541" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_profile.xml" value="0.2" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_profile_adm.xml" value="0.2" />
         <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_form_projetos.xml" value="0.264" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_lista_apontamento.xml" value="0.264" />
         <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_perfil_adm.xml" value="0.1102077687443541" />
         <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/apontamento.xml" value="0.16092475067996373" />
-        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/appbreis.xml" value="0.264" />
+        <entry key="..\:/Users/yohan/AndroidStudioProjects/MyApplication/app/src/main/res/layout/appbreis.xml" value="0.2" />
       </map>
     </option>
   </component>

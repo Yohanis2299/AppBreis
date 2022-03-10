@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="entrar">Entrar</string>
+
+    <string-array name="TipoAprov">
+        <item> 7 dias </item>
+        <item> 15 dias</item>
+        <item> 30 dias</item>
+    </string-array>
+
 </resources>

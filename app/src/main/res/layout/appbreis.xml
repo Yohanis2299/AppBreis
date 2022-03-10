@@ -7,74 +7,83 @@
     android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FB8C00"
-    tools:context=".AppBreis">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FB8C00"
+        tools:context=".AppBreis">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="161dp"
-        android:layout_height="115dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.086"
-        app:srcCompat="@drawable/img" />
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="161dp"
+            android:layout_height="115dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.086"
+            app:srcCompat="@drawable/img" />
 
-    <View
-        android:id="@+id/containerComponents"
-        style="@style/ContainerComponets"
-        android:layout_marginTop="108dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.0" />
+        <View
+            android:id="@+id/containerComponents"
+            style="@style/ContainerComponets"
+            android:layout_marginTop="108dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            app:layout_constraintVertical_bias="0.0" />
 
-    <EditText
-        android:id="@+id/edit_email"
-        style="@style/EditText"
-        android:inputType="textEmailAddress"
-        android:drawableRight="@drawable/ic_email"
-        android:hint="Email.."
-        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
-        app:layout_constraintStart_toStartOf="@+id/containerComponents"
-        app:layout_constraintTop_toTopOf="@+id/containerComponents"/>
-
-
-    <EditText
-        android:id="@+id/edit_senha"
-        style="@style/EditText"
-        android:inputType="numberPassword"
-        android:drawableRight="@drawable/ic_eye"
-        android:hint="Senha"
-        app:layout_constraintEnd_toEndOf="@+id/containerComponents"
-        app:layout_constraintStart_toStartOf="@+id/containerComponents"
-        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
-
-    <Button
-        android:id="@+id/bt_enter"
-        style="@style/ButtonLogin"
-        android:text="@string/entrar"
-        app:layout_constraintBottom_toBottomOf="@+id/containerComponents"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:id="@+id/progressbar"
-        android:visibility="invisible"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/containerComponents"/>
+        <EditText
+            android:id="@+id/edit_email"
+            style="@style/EditText"
+            android:inputType="textEmailAddress"
+            android:drawableRight="@drawable/ic_email"
+            android:hint="Email.."
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toTopOf="@+id/containerComponents"/>
 
 
+        <EditText
+            android:id="@+id/edit_senha"
+            style="@style/EditText"
+            android:inputType="numberPassword"
+            android:drawableRight="@drawable/ic_eye"
+            android:hint="Senha"
+            app:layout_constraintEnd_toEndOf="@+id/containerComponents"
+            app:layout_constraintStart_toStartOf="@+id/containerComponents"
+            app:layout_constraintTop_toBottomOf="@+id/edit_email" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <Button
+            android:id="@+id/bt_enter"
+            style="@style/ButtonLogin"
+            android:text="@string/entrar"
+            app:layout_constraintBottom_toBottomOf="@+id/containerComponents"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_senha" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:id="@+id/progressbar"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/containerComponents"/>
+
+        <Button
+            android:id="@+id/bt_adm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="144dp"
+            android:text="Modo ADM"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/containerComponents"
+            app:layout_constraintVertical_bias="0.277" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

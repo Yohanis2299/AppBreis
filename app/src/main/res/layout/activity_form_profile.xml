@@ -52,7 +52,7 @@
         app:layout_constraintTop_toBottomOf="@+id/img.profile" />
 
     <TextView
-        android:id="@+id/nome_projeto"
+        android:id="@+id/nome_colaborador"
         android:layout_width="195dp"
         android:layout_height="28dp"
         android:layout_marginTop="64dp"
@@ -64,7 +64,7 @@
         app:layout_constraintTop_toTopOf="@+id/view" />
 
     <TextView
-        android:id="@+id/id_cliente"
+        android:id="@+id/id_cargo"
         android:layout_width="195dp"
         android:layout_height="28dp"
         android:layout_marginTop="16dp"
@@ -73,7 +73,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.591"
         app:layout_constraintStart_toEndOf="@+id/img.profile"
-        app:layout_constraintTop_toBottomOf="@+id/nome_projeto" />
+        app:layout_constraintTop_toBottomOf="@+id/nome_colaborador" />
 
     <ImageButton
         android:id="@+id/bt_note"
@@ -81,12 +81,11 @@
         android:layout_height="50dp"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
-        android:src="@drawable/data"
+        android:src="@drawable/config"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintEnd_toStartOf="@+id/bt_Profile"
         app:layout_constraintStart_toStartOf="parent"
-        tools:src="@drawable/data" />
+        tools:src="@drawable/config" />
 
     <ImageButton
         android:id="@+id/bt_Profile"
@@ -94,11 +93,11 @@
         android:layout_height="50dp"
         android:backgroundTint="#00472020"
         android:scaleType="centerCrop"
-        android:src="@drawable/profile"
+        android:src="@drawable/homeicon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/profile" />
+        tools:srcCompat="@drawable/homeicon" />
 
     <ImageButton
         android:id="@+id/bt_config"
@@ -108,10 +107,9 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/config"
-        tools:srcCompat="@drawable/config" />
+        app:layout_constraintStart_toEndOf="@+id/bt_Profile"
+        app:srcCompat="@drawable/profile"
+        tools:srcCompat="@drawable/profile" />
 
 
     <TextView

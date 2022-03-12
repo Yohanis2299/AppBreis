@@ -25,60 +25,43 @@
         android:layout_marginBottom="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
+    <Spinner
+        android:id="@+id/spinnerProjeto"
+        android:layout_width="120dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:clickable="false"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/id_cargo" />
+
     <TextView
 
-        android:id="@+id/nome_projeto"
+        android:id="@+id/nome_colaborador"
         android:layout_width="195dp"
         android:layout_height="28dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="56dp"
         android:text="Nome do Colaborador"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toEndOf="@+id/img.profile"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
     <TextView
-        android:id="@+id/id_cliente"
+        android:id="@+id/id_cargo"
         android:layout_width="195dp"
         android:layout_height="28dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="16dp"
         android:text="Cargo"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toEndOf="@+id/img.profile"
-        app:layout_constraintTop_toBottomOf="@+id/nome_projeto" />
-
-    <ImageButton
-        android:id="@+id/bt_note"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:background="#00FFFFFF"
-        android:scaleType="centerInside"
-        android:src="@drawable/data"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:src="@drawable/data" />
-
-    <ImageButton
-        android:id="@+id/bt_Profile"
-        android:layout_width="75dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#00472020"
-        android:scaleType="centerCrop"
-        android:src="@drawable/profile"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@drawable/profile" />
+        app:layout_constraintTop_toBottomOf="@+id/nome_colaborador" />
 
     <ImageButton
         android:id="@+id/bt_config"
@@ -86,18 +69,41 @@
         android:layout_height="50dp"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
+        android:src="@drawable/config"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bt_Home"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/config" />
+
+    <ImageButton
+        android:id="@+id/bt_Home"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#00472020"
+        android:scaleType="centerCrop"
+        android:src="@drawable/homeicon"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.88"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/config"
-        tools:srcCompat="@drawable/config" />
+        tools:srcCompat="@drawable/homeicon" />
+
+    <ImageButton
+        android:id="@+id/bt_profile"
+        android:layout_width="75dp"
+        android:layout_height="50dp"
+        android:background="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/bt_Home"
+        app:srcCompat="@drawable/profile"
+        tools:srcCompat="@drawable/profile" />
 
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="357dp"
-        android:layout_height="52dp"
+        android:layout_width="361dp"
+        android:layout_height="53dp"
         android:layout_marginTop="12dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:paddingTop="5sp"
@@ -109,13 +115,13 @@
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.413"
-        app:layout_constraintStart_toEndOf="@+id/imageButton5"
+        app:layout_constraintStart_toEndOf="@+id/bt_backpage"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:text="Adicionar Apontamento" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/bt_backpage"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:backgroundTint="#00FFFFFF"
@@ -132,15 +138,15 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="195dp"
+        android:layout_width="wrap_content"
         android:layout_height="28dp"
-        android:layout_marginTop="12dp"
+
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
         android:text="Projeto"
         android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.592"
         app:layout_constraintStart_toEndOf="@+id/img.profile"
-        app:layout_constraintTop_toBottomOf="@+id/id_cliente" />
+        app:layout_constraintTop_toBottomOf="@+id/id_cargo" />
 
     <ImageView
         android:id="@+id/img.profile"
@@ -171,15 +177,15 @@
         android:layout_marginStart="40dp"
         android:text="Data"
 
-        app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+        app:layout_constraintBottom_toTopOf="@+id/data_apont"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/img.profile"
         app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/editTextDate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/data_apont"
+        android:layout_width="204dp"
+        android:layout_height="50dp"
         android:layout_marginStart="40dp"
         android:layout_marginBottom="24dp"
         android:ems="10"

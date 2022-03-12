@@ -21,7 +21,7 @@ public class FormApontamento extends AppCompatActivity {
         setContentView(R.layout.activity_form_apontamento);
         getSupportActionBar().hide();
 
-        androidImageButton = (ImageButton) findViewById(R.id.imageButton5);
+        androidImageButton = (ImageButton) findViewById(R.id.bt_backpage);
         androidImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

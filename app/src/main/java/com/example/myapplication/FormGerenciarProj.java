@@ -8,12 +8,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.ImageButton;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class FormGerenciarProj extends AppCompatActivity {
 
     Spinner TipoAprovacao;
+    ImageButton androidImageButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +36,14 @@ public class FormGerenciarProj extends AppCompatActivity {
                 exibirConfirmacao();
             }
         });
+        androidImageButton= (ImageButton) findViewById(R.id.bt_backpage);
+        androidImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openBackPage();
+            }
+        });
+
     }
 
     public void exibirConfirmacao() {
@@ -61,4 +71,9 @@ public class FormGerenciarProj extends AppCompatActivity {
         });
         msgBox.show();
     }
+    private void openBackPage(){
+        Intent intent =  new Intent(FormGerenciarProj.this, FormBemVindoAdm.class);
+        startActivity(intent);
+    }
+
 }

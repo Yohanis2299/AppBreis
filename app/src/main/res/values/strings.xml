@@ -8,4 +8,23 @@
         <item> 30 dias</item>
     </string-array>
 
+    <string-array name="Cargos">
+        <item> Desenvolvedor Junior </item>
+        <item> Desenvolvedor Pleno </item>
+        <item> Desenvolvedor Senior </item>
+    </string-array>
+
+    <string-array name="Projetos">
+        <item> FusoPar </item>
+        <item> Breis</item>
+    </string-array>
+
+    <string-array name="Contratos">
+        <item> PJ FullTime </item>
+        <item> PJ PartTime</item>
+        <item> CLT FullTime</item>
+        <item> CLT PartTime</item>
+        <item> Contrato</item>
+    </string-array>
+
 </resources>

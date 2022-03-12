@@ -66,14 +66,13 @@
             android:layout_height="50dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
-            android:src="@drawable/data"
+            android:src="@drawable/config"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintEnd_toStartOf="@+id/bt_Profile"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view"
             app:layout_constraintVertical_bias="0.0"
-            tools:src="@drawable/data" />
+            tools:src="@drawable/config" />
 
         <ImageButton
             android:id="@+id/bt_Profile"
@@ -81,13 +80,13 @@
             android:layout_height="50dp"
             android:backgroundTint="#00472020"
             android:scaleType="centerCrop"
-            android:src="@drawable/profile"
+            android:src="@drawable/homeicon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view"
             app:layout_constraintVertical_bias="1.0"
-            tools:srcCompat="@drawable/profile" />
+            tools:srcCompat="@drawable/homeicon" />
 
         <ImageButton
             android:id="@+id/bt_config"
@@ -97,48 +96,42 @@
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.88"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_Profile"
             app:layout_constraintTop_toBottomOf="@+id/view"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/config"
-            tools:srcCompat="@drawable/config" />
+            app:srcCompat="@drawable/profile"
+            tools:srcCompat="@drawable/profile" />
 
         <TextView
             android:id="@+id/textView"
             android:layout_width="323dp"
             android:layout_height="59dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="16dp"
             android:fontFamily="sans-serif-condensed-medium"
             android:text="Bem Vindo!"
+            android:layout_marginTop="5dp"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="38sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/view"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.387"
-            app:layout_constraintStart_toEndOf="@+id/bt_back"
+            app:layout_constraintHorizontal_bias="0.545"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.545"
             tools:text="Bem vindo!" />
 
         <ImageButton
             android:id="@+id/bt_back"
             android:layout_width="55dp"
             android:layout_height="55dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="4dp"
             android:backgroundTint="#00FFFFFF"
-            android:layout_marginTop="10dp"
             android:scaleType="fitCenter"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/back"
-            tools:srcCompat="@drawable/back" />
+            app:srcCompat="@drawable/logout"
+            tools:srcCompat="@drawable/logout" />
 
         <View
             android:id="@+id/view2"

@@ -98,14 +98,13 @@
             android:layout_height="50dp"
             android:background="#00FFFFFF"
             android:scaleType="centerInside"
-            android:src="@drawable/data"
+            android:src="@drawable/config"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.133"
+            app:layout_constraintEnd_toStartOf="@+id/bt_Profile"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view"
             app:layout_constraintVertical_bias="0.0"
-            tools:src="@drawable/data" />
+            tools:src="@drawable/config" />
 
         <ImageButton
             android:id="@+id/bt_Profile"
@@ -113,13 +112,13 @@
             android:layout_height="50dp"
             android:backgroundTint="#00472020"
             android:scaleType="centerCrop"
-            android:src="@drawable/profile"
+            android:src="@drawable/homeicon"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/view"
             app:layout_constraintVertical_bias="1.0"
-            tools:srcCompat="@drawable/profile" />
+            tools:srcCompat="@drawable/homeicon" />
 
         <ImageButton
             android:id="@+id/bt_config"
@@ -129,12 +128,11 @@
             android:scaleType="centerInside"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.88"
-            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_Profile"
             app:layout_constraintTop_toBottomOf="@+id/view"
             app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/config"
-            tools:srcCompat="@drawable/config" />
+            app:srcCompat="@drawable/profile"
+            tools:srcCompat="@drawable/profile" />
 
         <TextView
             android:id="@+id/textView"

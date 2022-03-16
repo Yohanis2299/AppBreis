@@ -34,6 +34,21 @@ public class FormApontamento extends AppCompatActivity {
                 exibirConfirmacao();
             }
         });
+        androidImageButton= (ImageButton) findViewById(R.id.bt_home);
+        androidImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openHome();
+            }
+        });
+        androidImageButton= (ImageButton) findViewById(R.id.bt_profile);
+        androidImageButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openProfile();
+            }
+        });
+
     }
     public void exibirConfirmacao(){
 
@@ -62,6 +77,14 @@ public class FormApontamento extends AppCompatActivity {
     }
     private void backPage(){
         Intent intent =  new Intent(this, FormBemVindo.class);
+        startActivity(intent);
+    }
+    private void openHome(){
+        Intent intent =  new Intent(FormApontamento.this, FormBemVindo.class);
+        startActivity(intent);
+    }
+    private void openProfile(){
+        Intent intent =  new Intent(FormApontamento.this, FormProfile.class);
         startActivity(intent);
     }
 }

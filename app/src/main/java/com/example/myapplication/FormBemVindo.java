@@ -1,12 +1,15 @@
 package com.example.myapplication;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
+import android.widget.Toast;
 
 public class FormBemVindo extends AppCompatActivity {
 
@@ -21,15 +24,7 @@ public class FormBemVindo extends AppCompatActivity {
         getSupportActionBar().hide();
 
 
-        androidImageButton= (ImageButton) findViewById(R.id.bt_back);
-        androidImageButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                openBackPage();
-            }
-        });
-
-        androidImageButton= (ImageButton) findViewById(R.id.bt_Profile);
+        androidImageButton= (ImageButton) findViewById(R.id.bt_profile);
         androidImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -37,7 +32,7 @@ public class FormBemVindo extends AppCompatActivity {
             }
         });
 
-        Button bt_enter = (Button) findViewById(R.id.bt_buscarApont);
+        Button bt_enter = (Button) findViewById(R.id.bt_addApont);
         bt_enter.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
@@ -51,10 +46,37 @@ public class FormBemVindo extends AppCompatActivity {
                 openMeusApont();
             }
         });
+        findViewById(R.id.bt_logoff).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                exibirConfirmacao();
+            }
+        });
     }
-    private void openBackPage(){
-        Intent intent =  new Intent(this, AppBreis.class);
-        startActivity(intent);
+    public void exibirConfirmacao() {
+
+        AlertDialog.Builder msgBox = new AlertDialog.Builder(this);
+        msgBox.setTitle("Saindo...");
+        msgBox.setIcon(android.R.drawable.ic_menu_close_clear_cancel);
+        msgBox.setMessage("Deseja sair do app?");
+        msgBox.setPositiveButton("Sim", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int witch) {
+                Toast.makeText(FormBemVindo.this, "LogOff",
+                        Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(FormBemVindo.this,
+                        AppBreis.class);
+                startActivity(intent);
+            }
+        });
+        msgBox.setNegativeButton("Nao", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(FormBemVindo.this, "Cancelado",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
+        msgBox.show();
     }
     private void openProfile(){
         Intent intent =  new Intent(this, FormProfile.class);

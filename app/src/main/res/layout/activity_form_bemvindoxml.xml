@@ -80,14 +80,14 @@ android:textAlignment="center">
         android:scaleType="centerInside"
         android:src="@drawable/config"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt_Profile"
+        app:layout_constraintEnd_toStartOf="@+id/bt_home"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.0"
         tools:src="@drawable/config" />
 
     <ImageButton
-        android:id="@+id/bt_Profile"
+        android:id="@+id/bt_home"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:backgroundTint="#00472020"
@@ -101,14 +101,14 @@ android:textAlignment="center">
         tools:srcCompat="@drawable/homeicon" />
 
     <ImageButton
-        android:id="@+id/bt_config"
+        android:id="@+id/bt_profile"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_Profile"
+        app:layout_constraintStart_toEndOf="@+id/bt_home"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/profile"
@@ -131,7 +131,7 @@ android:textAlignment="center">
         tools:text="Bem vindo!" />
 
     <ImageButton
-        android:id="@+id/bt_back"
+        android:id="@+id/bt_logoff"
         android:layout_width="55dp"
         android:layout_height="55dp"
         android:backgroundTint="#00FFFFFF"
@@ -145,7 +145,7 @@ android:textAlignment="center">
         tools:srcCompat="@drawable/logout" />
 
     <Button
-        android:id="@+id/bt_buscarApont"
+        android:id="@+id/bt_addApont"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="12sp"
@@ -164,7 +164,7 @@ android:textAlignment="center">
         android:layout_height="wrap_content"
         android:text="Ola Colaborador!"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/bt_Profile"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
         app:layout_constraintStart_toStartOf="parent"

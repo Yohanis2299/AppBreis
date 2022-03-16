@@ -121,7 +121,7 @@
             tools:text="Bem vindo!" />
 
         <ImageButton
-            android:id="@+id/bt_back"
+            android:id="@+id/bt_logoff"
             android:layout_width="55dp"
             android:layout_height="55dp"
             android:layout_marginStart="12dp"

@@ -24,7 +24,8 @@
         <item> PJ PartTime</item>
         <item> CLT FullTime</item>
         <item> CLT PartTime</item>
-        <item> Contrato</item>
+        <item> Contrato </item>
+
     </string-array>
 
 </resources>

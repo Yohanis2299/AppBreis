@@ -32,13 +32,13 @@
         android:id="@+id/button3"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="288dp"
+        android:layout_marginBottom="100dp"
         android:text="Adicionar Apontamento"
         app:layout_constraintBottom_toBottomOf="@+id/bt_Profile"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:layout_constraintVertical_bias="0.714" />
+        app:layout_constraintVertical_bias="0.09" />
 
     <Button
         android:id="@+id/button"
@@ -83,12 +83,12 @@
         android:scaleType="centerInside"
         android:src="@drawable/config"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt_Profile"
+        app:layout_constraintEnd_toStartOf="@+id/bt_home"
         app:layout_constraintStart_toStartOf="parent"
         tools:src="@drawable/config" />
 
     <ImageButton
-        android:id="@+id/bt_Profile"
+        android:id="@+id/bt_home"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:backgroundTint="#00472020"
@@ -107,7 +107,7 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_Profile"
+        app:layout_constraintStart_toEndOf="@+id/bt_home"
         app:srcCompat="@drawable/profile"
         tools:srcCompat="@drawable/profile" />
 
@@ -116,7 +116,7 @@
         android:id="@+id/textView"
         android:layout_width="369dp"
         android:layout_height="68dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="4dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Perfil"
         android:textAlignment="center"
@@ -124,25 +124,10 @@
         android:textSize="38sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Perfil" />
-
-    <ImageButton
-        android:id="@+id/bt_back"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-
-        android:backgroundTint="#00FFFFFF"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toEndOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/back"
-        tools:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/img.profile"

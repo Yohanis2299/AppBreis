@@ -79,14 +79,14 @@
         android:scaleType="centerInside"
         android:src="@drawable/config"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt_Profile"
+        app:layout_constraintEnd_toStartOf="@+id/bt_home"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.0"
         tools:src="@drawable/config" />
 
     <ImageButton
-        android:id="@+id/bt_Profile"
+        android:id="@+id/bt_home"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:backgroundTint="#00472020"
@@ -100,23 +100,24 @@
         tools:srcCompat="@drawable/homeicon" />
 
     <ImageButton
-        android:id="@+id/bt_config"
+        android:id="@+id/bt_profile"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:background="#00FFFFFF"
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_Profile"
+        app:layout_constraintStart_toEndOf="@+id/bt_home"
         app:layout_constraintTop_toBottomOf="@+id/view"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/profile"
         tools:srcCompat="@drawable/profile" />
 
+
     <TextView
         android:id="@+id/textView"
-        android:layout_width="348dp"
-        android:layout_height="53dp"
+        android:layout_width="287dp"
+        android:layout_height="56dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:text="Meus Apontamentos"
         android:textAlignment="center"
@@ -125,19 +126,19 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/bt_backpage"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.518"
+        app:layout_constraintVertical_bias="1.0"
         tools:text="Meus Apontamentos" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/bt_backpage"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="@+id/view"
         app:layout_constraintHorizontal_bias="0.0"
@@ -147,7 +148,6 @@
         app:srcCompat="@drawable/back"
         tools:srcCompat="@drawable/back" />
 
-
     <Button
         android:id="@+id/bt_buscarApont"
         android:layout_width="wrap_content"
@@ -155,7 +155,7 @@
         android:layout_marginTop="100dp"
         android:layout_marginBottom="200dp"
         android:text="Buscar"
-        app:layout_constraintBottom_toBottomOf="@+id/bt_Profile"
+        app:layout_constraintBottom_toBottomOf="@+id/bt_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11"

@@ -71,12 +71,12 @@
         android:scaleType="centerInside"
         android:src="@drawable/config"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/bt_Home"
+        app:layout_constraintEnd_toStartOf="@+id/bt_home"
         app:layout_constraintStart_toStartOf="parent"
         tools:src="@drawable/config" />
 
     <ImageButton
-        android:id="@+id/bt_Home"
+        android:id="@+id/bt_home"
         android:layout_width="75dp"
         android:layout_height="50dp"
         android:backgroundTint="#00472020"
@@ -95,7 +95,7 @@
         android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/bt_Home"
+        app:layout_constraintStart_toEndOf="@+id/bt_home"
         app:srcCompat="@drawable/profile"
         tools:srcCompat="@drawable/profile" />
 
@@ -104,7 +104,7 @@
         android:id="@+id/textView"
         android:layout_width="361dp"
         android:layout_height="53dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-condensed-medium"
         android:paddingTop="5sp"
         android:text="Adicionar Apontamento"
@@ -124,15 +124,15 @@
         android:id="@+id/bt_backpage"
         android:layout_width="55dp"
         android:layout_height="55dp"
+        android:layout_marginTop="10dp"
         android:backgroundTint="#00FFFFFF"
         android:scaleType="fitCenter"
-        android:layout_marginTop="10dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/back"
         tools:srcCompat="@drawable/back" />
 

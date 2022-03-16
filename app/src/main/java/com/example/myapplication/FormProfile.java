@@ -17,16 +17,17 @@ public class FormProfile extends AppCompatActivity {
         setContentView(R.layout.activity_form_profile);
         getSupportActionBar().hide();
 
-        androidImageButton= (ImageButton) findViewById(R.id.bt_back);
+        androidImageButton= (ImageButton) findViewById(R.id.bt_home);
         androidImageButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                openBackPage();
+                openHome();
             }
         });
     }
-    private void openBackPage(){
-        Intent intent =  new Intent(this, FormBemVindo.class);
+    private void openHome(){
+        Intent intent =  new Intent(FormProfile.this, FormBemVindo.class);
         startActivity(intent);
     }
+
 }

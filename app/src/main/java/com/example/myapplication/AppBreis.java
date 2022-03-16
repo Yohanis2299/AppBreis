@@ -21,7 +21,7 @@ public class AppBreis extends AppCompatActivity {
         bt_enter.setOnClickListener(new View.OnClickListener()
         {
             public void onClick(View v) {
-                Intent it = new Intent(AppBreis.this, FormBemVindo.class);
+                Intent it = new Intent(AppBreis.this,FormBemVindo.class);
                 startActivity(it);
             }
         });

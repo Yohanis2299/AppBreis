@@ -14,6 +14,44 @@
         tools:context=".FormBemVindoAdm">
 
 
+        ...
+
+        <ImageButton
+            android:id="@+id/bt_config"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            android:src="@drawable/config"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bt_home"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:src="@drawable/config" />
+
+        <ImageButton
+            android:id="@+id/bt_home"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00472020"
+            android:scaleType="centerCrop"
+            android:src="@drawable/homeicon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:srcCompat="@drawable/homeicon" />
+
+        <ImageButton
+            android:id="@+id/bt_profile"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:background="#00FFFFFF"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/bt_home"
+            app:srcCompat="@drawable/profile"
+            tools:srcCompat="@drawable/profile" />
+
         <View
             android:id="@+id/view"
             style="@style/background"
@@ -26,81 +64,78 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <Button
+            android:id="@+id/bt_gerenproj2"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="Gerenciar Clientes"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_buscarApont"
+            tools:text="Gerenciar Clientes" />
+
+        <Button
+            android:id="@+id/bt_gerenUser2"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:layout_marginBottom="60dp"
+            android:text="Metodos de Aprovaçao"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_gerenClient2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <Button
+            android:id="@+id/bt_buscarApont2"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="Gerenciar Aprovadores"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_gerenUser" />
+
+        <Button
+            android:id="@+id/bt_gerenClient2"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="44dp"
+            android:text="Gerenciar Cargos"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bt_gerenproj2" />
 
         <Button
             android:id="@+id/bt_gerenUser"
-            android:layout_width="250dp"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="5dp"
-            android:text="Gerenciar Usuarios"
+            android:text="Gerenciar Projetos"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bt_gerenClient" />
 
         <Button
             android:id="@+id/bt_gerenClient"
-            android:layout_width="250dp"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
-            android:layout_marginTop="5dp"
-            android:text="Gerenciar Clientes"
+            android:text="Gerenciar Colaboradores"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/bt_gerenproj" />
 
         <Button
             android:id="@+id/bt_gerenproj"
-            android:layout_width="250dp"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
-            android:text="Gerenciar Projetos"
+            android:text="Gerenciar Usuarios"
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView8"
-            app:layout_constraintVertical_bias="0.135"
-            tools:text="Gerenciar Projetos" />
-
-        <ImageButton
-            android:id="@+id/bt_note"
-            android:layout_width="75dp"
-            android:layout_height="50dp"
-            android:background="#00FFFFFF"
-            android:scaleType="centerInside"
-            android:src="@drawable/config"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/bt_Profile"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view"
-            app:layout_constraintVertical_bias="0.0"
-            tools:src="@drawable/config" />
-
-        <ImageButton
-            android:id="@+id/bt_Profile"
-            android:layout_width="75dp"
-            android:layout_height="50dp"
-            android:backgroundTint="#00472020"
-            android:scaleType="centerCrop"
-            android:src="@drawable/homeicon"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view"
-            app:layout_constraintVertical_bias="1.0"
-            tools:srcCompat="@drawable/homeicon" />
-
-        <ImageButton
-            android:id="@+id/bt_config"
-            android:layout_width="75dp"
-            android:layout_height="50dp"
-            android:background="#00FFFFFF"
-            android:scaleType="centerInside"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/bt_Profile"
-            app:layout_constraintTop_toBottomOf="@+id/view"
-            app:layout_constraintVertical_bias="0.0"
-            app:srcCompat="@drawable/profile"
-            tools:srcCompat="@drawable/profile" />
+            app:layout_constraintVertical_bias="0.067"
+            tools:text="Gerenciar Usuarios" />
 
         <TextView
             android:id="@+id/textView"
@@ -147,29 +182,24 @@
 
         <Button
             android:id="@+id/bt_buscarApont"
-            android:layout_width="250dp"
+            android:layout_width="270dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="44dp"
-            android:layout_marginBottom="100dp"
-            android:layout_marginTop="5dp"
-            android:text="Apontamentos"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:text="Gerenciar Contratos"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/bt_gerenUser"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintTop_toBottomOf="@+id/bt_buscarApont2" />
 
         <TextView
             android:id="@+id/textView8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
             android:text="Ola Colaborador!"
             android:textSize="24sp"
-            app:layout_constraintBottom_toBottomOf="@+id/bt_Profile"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.079"
+            app:layout_constraintHorizontal_bias="0.066"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view2"
-            app:layout_constraintVertical_bias="0.102" />
+            app:layout_constraintTop_toBottomOf="@+id/view2" />
 
         <TextView
             android:id="@+id/textView10"
@@ -181,5 +211,6 @@
             app:layout_constraintHorizontal_bias="0.498"
             app:layout_constraintStart_toStartOf="@+id/view2"
             app:layout_constraintTop_toTopOf="@+id/view" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>
